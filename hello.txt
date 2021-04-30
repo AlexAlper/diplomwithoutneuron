@@ -1,0 +1,4 @@
+Start Test 
+Неверный тест: false 
+Тест гнева: true 
+[object Object][object Object][object Object][object Object]

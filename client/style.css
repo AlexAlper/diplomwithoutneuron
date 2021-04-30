@@ -1,0 +1,40 @@
+.addFile{
+    text-align: center;
+}
+
+.btn-secondary{
+    margin: 10px;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    color: black;
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
+}
+
+#sendEmotion{
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+#chart_div{
+    margin-left: 40%;
+    text-align: center;
+    height: 400px;
+   width: 20%;
+}
+
+#chart_div_photo{
+    margin-left: 40%;
+    text-align: center;
+    height: 200px;
+   width: 20%;
+}
+
+#imgMarkup{
+    height: auto;
+   width: 90%;
+}

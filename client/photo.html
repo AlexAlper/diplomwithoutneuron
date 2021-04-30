@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Node.js</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Анализ видео</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="photo.html">Анализ фото</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="markup.html">Разметка</a>
+            </li>
+          </ul>
+
+          <div class="addFile"> 
+
+        <h1>Добавьте фото для анализа</h1>
+        <form action="/photo" method="post" enctype="multipart/form-data"  id="send-photo-form">
+            <label>Ваше фото</label><br>
+            <input type="file" name="filedata" accept="image/jpeg"/><br><br>
+            <input type="submit" value="Отправить" />
+          </form>
+          <div id="chart_div_photo">
+            <img src="" alt="альтернативный текст" id='imgMarkup'></img>
+          </div>
+          <div id="chart_div_emo"></div>
+          <div id="sendEmo" >
+            <button type="button" class="btn btn-outline-primary" id="setEmotion" >не согласен с эмоцией</button>
+          </div>
+
+          <div id = "chooseEmo">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="anger" autocomplete="off"> злость
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="contempt" autocomplete="off"> презрение
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="disgust" autocomplete="off"> отвращение
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="fear" autocomplete="off"> страх
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="happy" autocomplete="off"> счастье
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="sadness" autocomplete="off"> грусть
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="surprise" autocomplete="off"> удивление
+              </label>
+            </div>
+            <br><br>
+            <button type="button" class="btn btn-outline-primary" id="sendEmotion">Отправить</button>
+          </div>
+
+
+           </div>
+         
+
+          
+
+      
+
+
+          
+          
+          </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+    
+    <script type="text/javascript" src="script.js "></script>
+  
+
+    <html>
